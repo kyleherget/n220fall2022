@@ -1,3 +1,6 @@
+// Kyle Herget 8/31/22 NEWM-N 220
+
+
 function setup(){
     createCanvas(2560, 1400,); //big pacman canvas
     rectMode(CENTER); //starting from center
