@@ -1,7 +1,7 @@
 // Kyle Herget 9/5/22 NEWM-N 220
 
 //start setup
-var x = 0 // warp var
+var x = 0 // warp variable
 
 function setup() {
     createCanvas(800,600); //canvas size 
