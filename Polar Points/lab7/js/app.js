@@ -1,39 +1,45 @@
 // Kyle Herget 9/5/22 NEWM-N 220
-res = 
 
 // start of set up
 function setup(){
 
-createCanvas(1000,1000)
-background(194, 9, 235)
-
+createCanvas(1000,1000) // canvas size
+background(194, 9, 235) // purple 
 
 }
-// end of set up 
 
+// end of set up 
+  r = 10
 
 //start of draw
 function draw(){
-    translate(100,100)
-    circle(100,100,10)
-   translate(mouseX)
+ let res = {
+    x:500, y:400, r:10 // setting values for ellipes
  
+ }
+
+   ellipse(res.x,res.y,r) //ell 1
+    translate(30,25)
+   ellipse(res.x,res.y,r) // ell 2
+    translate(0,35)
+   ellipse(res.x,res.y,r)// ell 3 
+    translate(-30,25)
+   ellipse(res.x,res.y,r)// ell 4
+    translate(-30,-25)
+   ellipse(res.x,res.y,r) //ell 5
+    translate(0,-35)
+   ellipse(res.x,res.y,r) //ell 6
  
-
-
 }
 // end of draw
 
 
 //start of polarPoint
-function polarPoint(){
-r = 100
+function polarPoint(r){ //return r 
+
 var x = r * Math.sin(mouseX);
-var y = x
-return createVector(x,y)
-
-
-
+var y = r * Math.cos(mouseX);
+return createVector(x,y) //return x,y
 
 }
 //end of polarPoint
