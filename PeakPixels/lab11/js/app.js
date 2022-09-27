@@ -6,7 +6,7 @@
     let height = 100 // setting height var
 
     //start 
-    let div = document.getElementById('mydiv') // getting element by ID
+    let div = document.getElementById('mySquare') // getting element by ID
 
     //start of function, passing and math
     div.addEventListener('click',() => { // passing the parameters thru using the event-listener
