@@ -1,10 +1,14 @@
-let dvMydiv = document.getElementById("mydiv")
-dvMydiv.innerHTML = "mydiv"
+// Kyle Herget 9/22/22 NEWM-N 220
 
-var element = document.getElementById("mydiv");
-element.style.color = "#FFFF00";
+//start of DOM 
+let dvMydiv = document.getElementById("mydiv") // get the element by the ID
+dvMydiv.innerHTML = "mydiv" //writes what is in the " "in the div 
 
-div.addEventListener('click',() => {
-document.body.appendChild(dvMydiv);
+var element = document.getElementById("mydiv"); //gets element by ID 
+element.style.color = "#FFFF00"; // changes the color of the text "div"
+
+dvMydiv.document.createElement("div") // creates element 
+div.addEventListener('click',() => { // listens fot a click event from the mouse 
+document.body.appendChild(dvMydiv); // appends div to the body 
 
 })
