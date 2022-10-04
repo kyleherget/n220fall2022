@@ -1,4 +1,4 @@
-// Kyle Herget 9/22/22 NEWM-N 220
+// Kyle Herget 9/29/22 NEWM-N 220
 
 //start of DOM 
 let dvMydiv = document.getElementById("mydiv") // get the element by the ID
