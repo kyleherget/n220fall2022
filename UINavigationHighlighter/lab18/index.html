@@ -6,12 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<style>
+
+    /*style for all of the cards*/
+    .card{
+    height: 150px;
+    width: 200px;
+    border: 2px solid #000000;
+    margin: 20px
+    } 
+
+    /*for all the on click elements*/
+    .click{
+    background-color: #f2c25a;
+    font-weight: bold
+
+    }
+    /*style for all the body elements*/
+    #main-div{ 
+    display: flex;
+    flex-wrap: wrap
+    }
+
+    #clickedItem{ /*style for word on the top of the screen that high lights the word on the button to the top*/
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    width: center;
+    }
+    </style>
+    <body>
+    <div id="clickedItem">
+    </div>
+
+    <!-- start of the divs wiuth buttons 1 - 6 on them  -->
     
+    <div class="main-div">
+    <div class="card" id="1" onclick="addRemove(1)" >
+    Button 1 
 
+    </div>
+    <div class="card" id="2" onclick="addRemove(2)">
+    Button 2
 
+    </div>
+    <div class="card" id="3" onclick="addRemove(3)">
+    Button 3
 
+    </div>
+    <div class="card" id="4" onclick="addRemove(4)">
+    Button 4
+
+    </div>
+    <div class="card" id="5" onclick="addRemove(5)">
+    Button 5
+
+    </div>
+    <div class="card" id="6" onclick="addRemove(6)">
+    Button 6
+    </div>
+    </div>
+    <script>
+
+    /* loops runs for each of the divs and iterates 6 times */
+    const addRemove=(id)=>{
+    const clickedItem=document.getElementById("clickedItem");
+    for(let i=1;i<=6;i++)
+    {
+
+    const element=document.getElementById(i)
+    if(i==id)
+    {
+
+    element.classList.add('click');/*adding the click class for clicked div*/
+    clickedItem.textContent=element.textContent
+    }
+
+    else{
+    element.classList.remove('click');/*removing click class for remining divs*/
+    }
+    
+    }
+    }
+
+</script>
+</body>
+</html>
 
     <script src="js/app.js"></script>
+
 </body>
 </html>
