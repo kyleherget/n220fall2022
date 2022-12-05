@@ -1,0 +1,129 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e6d0b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px; height: 500px;
+    box-shadow: 5px 5px 40px rgba(0,0,0);
+    border-radius: 20px;
+    border-style: solid;
+    overflow: hidden;
+    border-width: 3.5px;
+    background:rgba(86, 59, 132, 0.3);
+   
+
+}
+
+form input {
+    width: 100%;
+    height: 140px;
+    border: none;
+    border-radius: 12px;
+    border-style: double; 
+    border-width: 8.5px;
+    border-color: rgb(126, 123, 126);   
+    font-size: 2.5rem;
+    padding: 2%;
+    background: rgb(53, 49, 49);
+    text-align: right;
+    pointer-events: none;
+    
+}
+
+  
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+button {
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid (0,0,0);
+    width: 60px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 1000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px 0px #6e4866;
+
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 1.5px 0px 0px rgb(114, 109, 109);
+    font-size: 17.5px;
+}
+
+
+
+
+.btn-yellow {
+    background:rgb(255, 132, 0);
+    color: rgb(0, 0, 0)
+}
+
+.btn-grey {
+    background: rgb(243, 235, 235);
+}
+
+.btn-equal {
+    background: rgb(30, 183, 30);
+
+}
+
+.btn-clear {
+    background: rgb(241, 71, 71);
+}
+
+.btn-CE {
+    background: rgb(241, 71, 71);
+}
+
+.btn-root {
+    background: rgb(255, 208, 0);
+}
+
+.btn-percent {
+    background: rgba(35, 207, 250, 0.656);
+}
+
+
+::placeholder {
+    opacity: .3; 
+}
+  
+  
+.input {
+ animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    100% {
+        opacity: 1;
+       
+    }
+}
+
+
+::selection {
+    background:none;
+  }
+
+
