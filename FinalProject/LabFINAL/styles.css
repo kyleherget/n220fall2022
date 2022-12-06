@@ -74,12 +74,12 @@ button:active {
 
 
 
-.btn-yellow {
+.btn-orange {
     background:rgb(255, 132, 0);
     color: rgb(0, 0, 0)
 }
 
-.btn-grey {
+.btn-white {
     background: rgb(243, 235, 235);
 }
 
@@ -127,3 +127,4 @@ button:active {
   }
 
 
+ 
