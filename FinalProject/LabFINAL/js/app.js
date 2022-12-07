@@ -6,7 +6,7 @@
   let clear = document.querySelector(".btn-clear");
   let CE = document.querySelector('.btn-CE'); // delete one entry place from the right
   let root = document.querySelector('.btn-root'); // evalaute a root 
-  let percent = document.querySelector('.btn-percent'); // evaule a percent
+  let pi = document.querySelector('.btn-pi'); // evaule a percent
 
 
   // functions for all buttons 
@@ -33,23 +33,23 @@
       screen.value = ""; // if event is active set screen value to ""
       })
 
-      
-   CE.getElementsByClassName("btn-CE", function(){
-      screen.value = screen.value.splice(0,-1)
+ // delete or clear entry function
+   CE.addEventListener("click", function(){ // clears or deletes a value from the right 400 - DEL = 40
+      screen.value = screen.value.slice(0,-1)
 
     })
 
+// computes a root entry on click when event us active. 
+    root.addEventListener("click", function() {
+       screen.value = Math.sqrt(screen.value);
+      
+    })
 
-})();
+    pi.addEventListener("click", function() {
+      screen.value = 3.14159
+      
+    })
 
-
-
-
-
-
-
-
-/*
 //plays sound
 let audio = new Audio("js/click.wav");
 let allbtns = document.querySelectorAll("button");
@@ -64,4 +64,6 @@ buttons.forEach(button => {
 // add CE funtion --- working on 
 // add percetn function
 
-*/
+})
+()
+;
